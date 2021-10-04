@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestBookActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorWhite"
+        app:subtitleTextColor="@color/colorWhite"
+        app:popupTheme="@style/AppTheme"
+        android:theme="@style/ToolBar"
+        />
+
+    <EditText
+        android:id="@+id/nameofBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#000000"
+        android:hint="Name of the Book"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        />
+
+    <EditText
+        android:id="@+id/authorofBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Author of the Book"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_baseline_assignment_24"
+        />
+    <EditText
+        android:id="@+id/MobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Your Mobile Number "
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#000000"/>
+
+
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Area/Colony"
+        android:inputType="textMultiLine"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        />
+
+    <EditText
+        android:id="@+id/Addresss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Nearby (e.g.school/college/road)"
+        android:inputType="textMultiLine"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/color_gradient_3"
+        android:text="Request"
+        android:textAllCaps="false"
+        android:textColor="#60ffffff"
+        android:textSize="18sp"
+        android:enabled="false"
+        />
+
+</LinearLayout>
